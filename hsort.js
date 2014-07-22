@@ -23,14 +23,12 @@ Hsort = {
     return splitted;
   },
 
-  flatten: function() {
-    function flatten(list) {
-      return list.reduce(function(acc, d){
+  flatten: function(list) {
+    return list.reduce(function(acc, d){
                d.forEach(function(d0) {
                  acc.push(d0);
                })
                return acc;
-             }, []);
-    }
+           }, []);
   }
 }
